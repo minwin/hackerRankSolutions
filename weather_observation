@@ -7,3 +7,16 @@ Solution:
 SELECT round(sum(lat_n), 2),
 round(sum(long_w), 2)
 from station;
+
+
+weather observation challenge 6
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+
+Solution:
+select city from station
+WHERE city LIKE 'a%' or
+city LIKE 'e%' or 
+city LIKE 'i%' or 
+city LIKE 'o%' or 
+city LIKE 'u%' 
+order by 1;
