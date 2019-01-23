@@ -17,12 +17,21 @@ WHERE RIGHT(city,1) IN ('a','e','i','o','u')
 
 
 https://www.hackerrank.com/challenges/weather-observation-station-9/problem
-
 select DISTINCT(city) from station
 WHERE LEFT(city,1) NOT IN ('a','e','i','o','u') ;
 
+
 https://www.hackerrank.com/challenges/weather-observation-station-11/problem
+Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
 
 select DISTINCT(city) from station
 WHERE RIGHT(city,1) NOT IN ('a','e','i','o','u') OR
+LEFT(city,1) NOT IN ('a','e','i','o','u') ;
+
+
+https://www.hackerrank.com/challenges/weather-observation-station-12/problem
+Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+
+select DISTINCT(city) from station
+WHERE RIGHT(city,1) NOT IN ('a','e','i','o','u') and
 LEFT(city,1) NOT IN ('a','e','i','o','u') ;
